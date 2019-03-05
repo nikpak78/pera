@@ -1,0 +1,18 @@
+{% include directory ~ '/partials/mainnav.html.twig' %}
+<div class="off-canvas-wrapper">
+
+  <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+
+    <div class="off-canvas-absolute show-for-small-only position-left" id="offCanvasLeft" data-off-canvas>
+    <ul class="simple vertical">
+{{ page.menus }}
+  </ul>
+
+    </div>
+    <div class="off-canvas-content" data-off-canvas-content>
+{% include directory ~ '/partials/content.html.twig' %}
+{% include directory ~ '/partials/card.html.twig' %}
+{% include directory ~ '/partials/footer.html.twig' %}
+</div>
+</div>
+</div>

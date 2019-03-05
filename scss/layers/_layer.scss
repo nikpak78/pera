@@ -1,0 +1,515 @@
+@mixin easeOut {
+  transition: all 0.5s ease-out;
+}
+.spin-wc {
+  @include mui-animation(slide($direction: left));
+  animation-duration: 4s;
+}
+.spin-wf {
+  @include mui-animation(slide($direction: down));
+  animation-duration: 7s;
+}
+.thing-two {
+  @include mui-animation(slide($direction: right));
+
+  animation-duration: 3s;
+}
+
+.marketing-site-features {
+  background: $primary-color;
+  color: $white;
+}
+body {
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+.panomeros {
+  margin-top: 150px;
+}
+
+.koumpi a {
+  font-size: 10px;
+}
+
+.fi-torso {
+  a {
+    color: $dark-gray;
+  }
+}
+
+//.flex-control-paging li a { display: none;}
+
+.card-divider {
+  color: $white;
+}
+
+// to kouneli einai to aspro mesa sto body
+.kouneli {
+  background-color: #fbfbfb;
+}
+
+// scss gia to poioi eimaste
+
+$full-width-testimonial-quote-color: $warning-color;
+$full-width-testimonial-vertical-padding: 2rem;
+
+#quote {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.full-width-testimonial {
+  padding: 50px;
+  border-radius: 10px;
+  border-style: Solid;
+  border-color: #8c8c8c;
+
+  border-width: 3px;
+
+  box-shadow: $info-shadow;
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.1)),
+    url("../img/Rose-Petals.svg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.full-width-testimonial-icon {
+  .quote-path {
+    fill: none;
+    stroke: $full-width-testimonial-quote-color;
+    stroke-width: 2.5192;
+    stroke-miterlimit: 10;
+  }
+}
+
+.full-width-testimonial-content,
+.full-width-testimonial-icon {
+  text-align: center;
+}
+.full-width-testimonial-section {
+  padding-top: $full-width-testimonial-vertical-padding;
+
+  .full-width-testimonial-text {
+    font-weight: 300;
+    color: #ffffff;
+    padding-left: 30px;
+    padding-right: 30px;
+    // Adjust margin-top for line spacing
+    margin-top: -5px;
+
+    @include breakpoint(small) {
+      padding-left: 50px;
+      padding-right: 50px;
+      font-size: 1.5em;
+    }
+
+    @include breakpoint(medium) {
+      padding-left: 100px;
+      padding-right: 100px;
+    }
+
+    @include breakpoint(large) {
+      padding-left: 180px;
+      padding-right: 180px;
+      font-size: 1.8em;
+    }
+
+    @include breakpoint(xlarge) {
+      padding-left: 300px;
+      padding-right: 300px;
+    }
+  }
+
+  .full-width-testimonial-source {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #ffffff;
+
+    letter-spacing: 1.5px;
+    padding-bottom: 0;
+    margin-bottom: 0.2em;
+
+    @include breakpoint(small) {
+      font-size: 1em;
+    }
+  }
+
+  .full-width-testimonial-source-context {
+    display: block;
+    font-size: 0.9em;
+    font-weight: 500;
+    color: #ffffff;
+
+    letter-spacing: 1.5px;
+
+    @include breakpoint(small) {
+      font-size: 0.8em;
+    }
+  }
+}
+
+.full-width-testimonial-text,
+.full-width-testimonial-content,
+.full-width-testimonial-source,
+.full-width-testimonial-icon {
+  padding-bottom: $full-width-testimonial-vertical-padding;
+}
+
+.full-width-testimonial-content {
+  width: 100%;
+}
+
+// einai to  field sto kimeno
+.zaxari {
+  padding: 15px;
+
+  background: url("../img/leftbar1.png");
+  background-color: #00222e;
+  background-size: 100% 100%;
+  background-position: 100% 100%;
+  color: #d4d4d4;
+  text-align: center;
+
+  a {
+    color: #009bbb;
+  }
+  box-shadow: $info-shadow;
+}
+
+.zaxari-right {
+  @include kafe;
+  line-height: 1.2em;
+  font-size: 0.9em;
+  margin-bottom: 0.5em;
+  margin-top: 10px;
+
+  padding: 10px;
+  color: #070707;
+  text-align: center;
+
+  a {
+    color: $light-gray;
+  }
+}
+
+.zaxari-left {
+  margin-top: 10px;
+  background-color: #e4e4e4;
+  padding: 10px;
+  color: #070707;
+  text-align: center;
+
+  a {
+    color: #fcbf56;
+    font-weight: 900;
+  }
+}
+
+// to koukou einai custom block
+.koukou {
+  @include kafe-2;
+  h6 {
+    font-size: 23px;
+  }
+}
+
+.section-b {
+  height: 50px;
+  background-color: $medium-gray;
+  border-radius: 4px;
+  color: $black;
+  padding: 1px 0;
+  text-align: center;
+  color: $plan2;
+
+  margin-top: -57px;
+
+  h1 {
+    color: #d1dfe4;
+    font-family: "Mistral";
+  }
+}
+//svg teleftea nea
+#Layer_1 {
+  margin-top: -60px;
+}
+
+.section-c {
+  background-color: $primary-color;
+  background-image: url(../img/back1.png);
+  color: $black;
+  padding: 20px 10px;
+  text-align: center;
+
+  .fa {
+    font-size: 150px;
+  }
+}
+
+.mistral {
+  h3,
+  h4,
+  h5 {
+    color: #1c180d;
+    font-family: "Mistral";
+  }
+}
+
+.orbit-caption h6 {
+  line-height: 1.25;
+  color: #fff;
+}
+
+.card-image {
+  padding-top: 5px;
+  margin-bottom: 0px;
+}
+
+.card-divider {
+  background-color: $dark-gray;
+  a {
+    color: $white;
+    font-style: italic;
+    font-size: 16px;
+  }
+}
+.card-section {
+  a {
+    font-weight: bolder;
+  }
+}
+
+.roze {
+  background-color: $light-blue;
+  padding-top: 5px;
+  box-shadow: $info-shadow;
+  border-radius: $global-radius;
+}
+
+.button.hollow {
+  padding: 5px;
+  border: 1px solid $light-gray;
+  color: $white;
+}
+
+// Source: https://designpieces.com/2012/12/social-media-colours-hex-and-rgb/
+
+//promo container
+
+a.cta {
+  text-transform: uppercase;
+  font-size: 0.9em;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0.5em 0 0 0;
+  padding: 0px 12px 0px 0px;
+  background: url(../img/cta_arrow.png) no-repeat right 0px;
+  color: $kokos;
+}
+a.cta:hover {
+  background-position: right -50px;
+  color: $primary-color;
+}
+
+.promo_container {
+  padding: 0px 0px 15px 20px;
+  background-color: $white;
+}
+.promo_container .promo {
+  width: 33%;
+  float: left;
+  background-position: 0px 3px;
+}
+.promo_container .promo .content {
+  padding: 0px 30px 0px 70px;
+}
+
+.promo h3 {
+  font-size: 1.5em;
+  margin: 0;
+  font-weight: bolder;
+}
+.promo p {
+  line-height: 1.2em;
+  font-size: 0.9em;
+  margin-bottom: 0.5em;
+}
+
+.promo {
+  background-repeat: no-repeat;
+}
+
+.promo.one {
+  background-image: url(../img/promo_1.jpg);
+}
+.promo.two {
+  background-image: url(../img/promo_2.jpg);
+}
+.promo.three {
+  background-image: url(../img/promo_3.jpg);
+}
+.promo_container {
+  padding: 0px 0px 15px 20px;
+}
+.promo_container .promo {
+  float: left;
+  background-position: 0px 3px;
+}
+.promo_container .promo .content {
+  padding: 0px 30px 0px 70px;
+}
+
+.title-bar-left,
+.title-bar-right {
+  -ms-flex: 1 1 0px;
+  flex: none;
+}
+
+//kimeno article
+$news-card-label-background: $primary-color;
+$news-card-label-background-hover: scale-color(
+  $news-card-label-background,
+  $lightness: -15%
+);
+
+.news-card {
+  color: $black;
+  background-color: $light-blue;
+  font-weight: 400;
+  font-size: 1.125rem;
+  margin-bottom: 1.6rem;
+  border-radius: 0.125rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+
+  .card-section {
+    background-color: inherit;
+
+    .news-card-date {
+      font-size: 11px;
+      color: $warning-color;
+    }
+
+    .label {
+      padding: 10px;
+      border-radius: 4px;
+      box-shadow: $info-shadow;
+      a {
+        color: $white;
+        font-size: 12px;
+      }
+    }
+    .news-card-article {
+      background-color: inherit;
+      padding-top: 12px;
+
+      .article-caption {
+        font-size: 2.4rem;
+        line-height: 0;
+        font-weight: bold;
+        margin-top: -170px;
+        position: absolute;
+        color: rgb(214, 214, 214);
+        background: rgba(0, 0, 0, 0.6);
+        padding: 10px;
+        border-radius: 4px;
+        box-shadow: $info-shadow;
+
+        a {
+          font-size: 11px;
+          text-decoration: none;
+          color: $white;
+          transition: color 0.5s ease;
+
+          &:hover {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+.blockquote-container {
+  background-color: $light-gray;
+  &.blockquote-left {
+    float: left;
+    width: 35%;
+    margin-right: $global-margin;
+
+    @include breakpoint(small only) {
+      float: none;
+      margin: 0;
+      width: 100%;
+    }
+  }
+
+  &.blockquote-right {
+    float: right;
+    width: 35%;
+    margin-left: $global-margin;
+  }
+
+  .callout {
+    border-radius: 4px;
+    background-color: $kokos;
+
+    .blockquote-title {
+      margin-left: 1rem;
+      padding-top: 10px;
+    }
+
+    blockquote {
+      quotes: "“" "”" "‘" "’  ";
+      border-left: none;
+
+      &:before {
+        content: open-quote;
+        color: rgb(245, 191, 14);
+        font-size: 4em;
+        line-height: 0.1em;
+        vertical-align: -0.4em;
+      }
+
+      &:after {
+        content: close-quote;
+        color: rgb(245, 191, 14);
+        font-size: 4em;
+        line-height: 0.1em;
+        vertical-align: -0.6em;
+      }
+
+      .blockquote-content {
+        display: inline;
+        color: $white;
+      }
+    }
+  }
+}
+.dokimastiko {
+  background-color: $kokos;
+  color: $light-gray;
+  margin-bottom: 0px;
+}
+
+@media screen and (max-width: 600px) {
+  .panomeros {
+    margin-top: 100px;
+  }
+  #Layer_1 {
+    margin-top: -60px;
+    position: absolute;
+    padding: 15px;
+  }
+  .news-card {
+    h2 {
+      font-size: 17px;
+    }
+    h6 {
+      font-size: 1px;
+      color: #ddd2cf;
+    }
+  }
+  .article-caption {
+    background: rgba(0, 0, 0, 0.8);
+  }
+}

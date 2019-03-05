@@ -1,0 +1,35 @@
+permanent:
+  css:
+    theme:
+      "//fonts.googleapis.com/css?family=Charm": { external: true }
+
+opensans:
+  css:
+    theme:
+      "https://fonts.googleapis.com/css?family=Play:400,700&amp;subset=greek":
+        { external: true }
+
+global:
+  version: 1.x
+  css:
+    theme:
+      css/app.css: {}
+
+  js:
+    js/what-input.js: {}
+    js/stavros.js: {}
+    js/foundation.js: {}
+    js/main.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/jquery.once
+
+js-moroni:
+  js:
+    js/text.js: {}
+    js/noris.js: {}
+js-min:
+  header: true
+  js:
+    js/min.js: {}

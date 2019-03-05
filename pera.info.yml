@@ -1,0 +1,26 @@
+name: pera
+type: theme
+description: 'A Drupal 8 theme'
+version: VERSION
+core: 8.x
+base theme: stable
+
+libraries:
+  - 'pera/global'
+  - 'pera/permanent'
+  - 'nikos/opensans'
+
+regions:
+  menus: Menus
+  brand: Brand
+  breadcrumb: Breadcrumb
+  monomprosta: Monomprosta
+  content: Content
+  sidebar: Sidebar
+  card: Card
+  footer: Footer
+  articleone: article1
+  articletwo: article2
+  proto: proto
+  stories: Stories
+  promoted: Promoted

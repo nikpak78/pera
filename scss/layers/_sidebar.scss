@@ -1,0 +1,54 @@
+@mixin kafe-2 {
+  background-image: url(../img/Rose-Petals.svg);
+  background-position: center center;
+  background-size: cover;
+  padding: 4px;
+  border-radius: 10px;
+  border-style: Solid;
+  border-color: #acacac;
+
+  border-width: 2px;
+  color: $white;
+  font-size: 14px;
+  box-shadow: $info-shadow;
+  a {
+    font-size: 17px;
+    font-weight: 800;
+    color: #f4eede;
+  }
+}
+
+@mixin kafe {
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  background-color: #dfdfdf;
+
+  border-radius: 2px;
+  border-style: Solid;
+  border-color: #0b3e67;
+
+  border-width: 1px;
+  color: #dd58dd;
+  font-size: 14px;
+  box-shadow: $info-shadow;
+  a {
+    font-size: 17px;
+    font-weight: 800;
+    color: #f4eede;
+  }
+}
+
+.zonari {
+  a {
+    color: #db8b02;
+  }
+}
+
+.niaou {
+  @include kafe;
+}
+.roze {
+  padding: 10px;
+  background-color: rgb(233, 119, 119);
+}

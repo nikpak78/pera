@@ -1,0 +1,67 @@
+$clean-hero-slider-accent: $warning-color;
+.orbit-caption {
+    color: $light-gray;
+    width: auto;
+    height: auto;
+    background: $black;
+    position: absolute;
+    text-align: center;
+    right: 0;
+    left: 0;
+    padding: 0.2rem 2rem;
+
+    border-radius: 5px;
+
+
+    @include breakpoint(medium) {
+      @include vertical-center;
+      margin-top: 80px;
+      background: rgba(0,0,0,.6);
+      text-align: left;
+      width: 70%;
+      right: 0;
+      padding: 1rem 2rem;
+    }
+
+    @include breakpoint(small) {
+      font-size: 1.0em;
+      margin-top: -70px;
+    }
+
+
+
+    a {
+      color: $clean-hero-slider-accent;
+      font-size: 2rem;
+
+      font-family: $body-font-family;
+      font-weight: 900;
+      margin-bottom: 0;
+
+      @include breakpoint(medium) {
+        font-size: 1,3rem;
+        font-weight: 900;
+      }
+    }
+  }
+  .flex-control-paging  {
+    display: none;
+  }
+
+
+  .orbit-caption a {
+
+
+  }
+
+@media screen and (max-width: 600px) {
+  .orbit-caption  {
+
+a {
+
+font-size: 18px;
+}
+
+
+   }
+}
